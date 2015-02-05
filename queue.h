@@ -10,5 +10,5 @@ struct queue{
 };
 
 Queue createQueue(void);
-int push(Queue queue, void * data);
-void * pop(Queue queue);
+int insert(Queue queue, void * data);
+void * deleteFront(Queue queue);

@@ -12,7 +12,7 @@ Queue createQueue(void){
 	return new_queue;
 };
 
-int push(Queue queue, void * data){
+int insert(Queue queue, void * data){
 	int pass;
 	LinkedList* list = queue.list;
 	node_ptr node = create_node(data);
@@ -20,7 +20,7 @@ int push(Queue queue, void * data){
 	return (pass)?queue.list->count:-1;
 };
 
-void * pop(Queue queue){
+void * deleteFront(Queue queue){
 	void* deletedAddress;
 	LinkedList* list = queue.list;
 	deletedAddress = deleteElementAt(list,0);
